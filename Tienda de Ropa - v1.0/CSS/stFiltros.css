@@ -1,0 +1,87 @@
+.caja_filtros {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.466);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: right;
+    animation: 1s filtros-anim1;
+    display: none;
+ }
+ 
+ 
+ .menu_filtros{
+    width: 25%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.884);
+    box-shadow: 0 0 8px black;
+    animation: 0.5s filtros-anim2;
+    padding: 10px;
+ }
+ .menu_filtros form{
+    border: 1px dotted black;
+    padding: 10px;
+    height: 100%;  
+ }
+ 
+ .menu_filtros form h2{
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+ }
+ .menu_filtros form h2 a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+    color: black;
+ }
+ .menu_filtros form h5{
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 6px;
+    color: black;
+ }
+ .menu_filtros select{
+    width: 49%;
+ }
+ .menu_filtros input, .menu_filtros select{
+    height: 30px;
+    border-radius: 5px;
+    padding: 4px;
+ }
+ .menu_filtros input[type=number]{
+    width: 70%;
+ }
+ .menu_filtros input[type=submit]{
+    width: 100%;
+    background-color: black;
+    margin-top: 10px;
+    color: white;
+ }
+ .menu_filtros input[type=submit]:hover{
+    background-color: #cecfd2;
+    color: #1f1f1f;
+ }
+ .menu_filtros form div{
+    margin-top: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ @keyframes filtros-anim1 {
+    0% {
+       background-color: rgba(0, 0, 0, 0);
+    }
+    100% {
+       background-color: rgba(0, 0, 0, 0.466);
+    }
+ }
+ @keyframes filtros-anim2 {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+ }
